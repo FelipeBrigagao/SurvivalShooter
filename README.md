@@ -22,7 +22,9 @@ Utilização de um sistema de áudio, onde temos a música ambiente do jogo e a 
 - Como instalar:
 
 Fazer o download do main branch
+
 Dentro desse haverá uma pasta Installer.
+
 Executar o Sweet Dreams Installer e seguir as instruções.
 
 
