@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
     {
         
         agent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = PlayerManager.Instance._currentPlayer;
         anim = GetComponent<Animator>();
         playerLayer = LayerMask.GetMask("Player");
     
