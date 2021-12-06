@@ -27,16 +27,8 @@ public class PlayerHealth : HealthBase
         _playerAnim = GetComponent<PlayerAnimation>();
         playerAudio = GetComponent<AudioSource>();
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            HurtReaction();
-        }
-    }
-
     #endregion
+
 
     #region Methods
     public override void TakeDamage(int damageTaken)

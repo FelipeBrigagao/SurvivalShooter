@@ -29,7 +29,7 @@ public class GameManager : SingletonBase<GameManager>
         PlayerManager.Instance.InstantiatePlayer();
         PlayerManager.Instance.InitiatePoints();
         UIManager.Instance.InitiateGameUI();
-        //acionar o spawn dos inimigos
+        WaveManager.Instance.InitiateWaves();
     }
 
     #endregion

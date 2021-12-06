@@ -10,6 +10,8 @@ public class PlayerManager : SingletonBase<PlayerManager>
     [SerializeField]
     private GameObject _playerPrefab;
 
+    private FollowPlayer _playerCam;
+
     public bool playerIsDead { get; private set;}
 
     public int _currentPoints { get; private set; }
@@ -45,6 +47,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
     public void InstantiatePlayer()
     {
         _currentPlayer = SpawnManager.Instance.SpawnPlayer(_playerPrefab);
+        _playerCam.SetCurrentPlayerInstance(_currentPlayer.transform);
     }
 
     public void AddPoints(int pointsGained)
@@ -58,5 +61,9 @@ public class PlayerManager : SingletonBase<PlayerManager>
         _currentPoints = 0;
     }
 
+    public void SetPlayerCam(FollowPlayer playerCam)
+    {
+        _playerCam = playerCam;
+    }
     #endregion
 }

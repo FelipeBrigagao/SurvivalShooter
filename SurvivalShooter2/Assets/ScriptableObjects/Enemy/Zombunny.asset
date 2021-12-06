@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f1a3f256c1cc245b0599f30a7fb112, type: 3}
+  m_Name: Zombunny
+  m_EditorClassIdentifier: 
+  name: Zombunny
+  enemyMaxHealth: 20
+  enemyPoints: 10
+  enemyDeathSound: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
+  enemyDamage: 10
+  enemyAttackRadius: 1.3
+  enemyAttackRate: 2
+  enemySpeed: 4
+  stopDistance: 2.3
+  firstTimeToSpawn: 0
+  timeToSpawn: 3
+  baseEnemyDamage: 0
+  baseEnemySpeed: 0
+  basetimeToSpawn: 0

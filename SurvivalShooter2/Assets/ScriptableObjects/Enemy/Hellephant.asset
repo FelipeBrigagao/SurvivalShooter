@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f1a3f256c1cc245b0599f30a7fb112, type: 3}
+  m_Name: Hellephant
+  m_EditorClassIdentifier: 
+  name: Hellephant
+  enemyMaxHealth: 70
+  enemyPoints: 40
+  enemyDeathSound: {fileID: 8300000, guid: 8c615fd0429f34edf85539d70279360d, type: 3}
+  enemyDamage: 30
+  enemyAttackRadius: 2.2
+  enemyAttackRate: 3
+  enemySpeed: 2.5
+  stopDistance: 2.5
+  firstTimeToSpawn: 10
+  timeToSpawn: 7
+  baseEnemyDamage: 0
+  baseEnemySpeed: 0
+  basetimeToSpawn: 0

@@ -14,9 +14,12 @@ public class FollowPlayer : MonoBehaviour
     #endregion
 
     #region Unity Methods
+    private void Awake()
+    {
+        PlayerManager.Instance.SetPlayerCam(this);
+    }
     void Start()
     {
-        _player = PlayerManager.Instance._currentPlayer.transform;
         _offset = new Vector3(0f, 8f, -8f);
     }
 
@@ -28,6 +31,11 @@ public class FollowPlayer : MonoBehaviour
 
         transform.position = smoothedPosition;
         transform.LookAt(_player);
+    }
+
+    public void SetCurrentPlayerInstance(Transform currentPlayer)
+    {
+        _player = currentPlayer;
     }
     #endregion
 }
