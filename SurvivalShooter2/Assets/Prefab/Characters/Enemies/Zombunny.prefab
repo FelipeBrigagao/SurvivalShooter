@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 1993391509}
   - component: {fileID: 327662995}
   - component: {fileID: 327662996}
+  - component: {fileID: 5579971488432322685}
   m_Layer: 10
   m_Name: Zombunny
   m_TagString: Enemy
@@ -306,6 +307,7 @@ MonoBehaviour:
   _destroyOnDeath: 0
   _sinkingSpeed: 10
   _sinkingDepth: -10
+  _drop: {fileID: 0}
 --- !u!114 &327662995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,3 +335,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyStats: {fileID: 11400000, guid: e4422a550dd202242a496af281784425, type: 2}
+--- !u!114 &5579971488432322685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419862694359575954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfcaeb94cdd2c4e947038e6659d368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drops:
+  - {fileID: 3782917748102516192, guid: e3673fb04d3f1aa42b094c109a0a4c64, type: 3}

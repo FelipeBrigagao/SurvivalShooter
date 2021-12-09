@@ -14,6 +14,7 @@ public class UIManager : SingletonBase<UIManager>
 
     private HealthSlider _playerHealthSlider;
     private WaveUI _waveUI;
+    private Fade _fade;
 
     #endregion
 
@@ -25,7 +26,10 @@ public class UIManager : SingletonBase<UIManager>
 
     }
 
-
+    private void OnDestroy()
+    {
+        PlayerManager.Instance.OnPlayerDeath -= PlayerDied;
+    }
     #endregion
 
     #region Methods
@@ -114,7 +118,15 @@ public class UIManager : SingletonBase<UIManager>
         InitiateHealthUI();
     }
 
+    public void StartGameFade()
+    {
+        _fade.EnterGameFade();
+    }
 
+    public void ChangeScenesFade()
+    {
+        _fade.ChangeScenesFade();
+    }
 
     public void SetScoreTXT(Text scoreTXT)
     {
@@ -136,10 +148,9 @@ public class UIManager : SingletonBase<UIManager>
         _waveUI = waveUI;
     }
 
-    private void OnDestroy()
+    public void SetFade(Fade fade)
     {
-        PlayerManager.Instance.OnPlayerDeath -= PlayerDied;
+        _fade = fade;
     }
-
     #endregion
 }

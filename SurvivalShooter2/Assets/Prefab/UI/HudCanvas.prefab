@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waveTXT: {fileID: 1495508079}
   _effectDuration: 4
+  _effectDelay: 0
 --- !u!1 &2297757986708064142
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +565,7 @@ RectTransform:
   - {fileID: 2297757986708064141}
   - {fileID: 2297757986835697059}
   m_Father: {fileID: 2297757987562837158}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1126,8 +1127,8 @@ RectTransform:
   - {fileID: 7359090605156260739}
   - {fileID: 2297757988376402623}
   - {fileID: 4586193273152820957}
-  - {fileID: 5754439345393197848}
   - {fileID: 2297757987049211181}
+  - {fileID: 5754439345393197848}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2495,7 +2496,7 @@ PrefabInstance:
     - target: {fileID: 976718462135491344, guid: 7e09a19876ba88f45af0802a683699c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7164454754319399045, guid: 7e09a19876ba88f45af0802a683699c2,
         type: 3}

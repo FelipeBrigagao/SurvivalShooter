@@ -18,16 +18,7 @@ public class MainMenu : MonoBehaviour
     #region Methods
     public void EnterGame()
     {
-        StartCoroutine(TransitionToGame());
-    }
-
-    IEnumerator TransitionToGame()
-    {
-        transitionAnim.SetTrigger("Start");
-
-        yield return new WaitForSeconds(waitForAnimationTime);
-
-        SceneManager.LoadScene(1);
+        StartCoroutine(GameManager.Instance.StartGame());
     }
 
     public void ExitGame()

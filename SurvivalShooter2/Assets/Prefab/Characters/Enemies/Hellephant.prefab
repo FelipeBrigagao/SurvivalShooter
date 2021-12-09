@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 201948827903503952}
   - component: {fileID: 276724502785919466}
   - component: {fileID: 8082997884347236283}
+  - component: {fileID: 7754935309519293398}
   m_Layer: 10
   m_Name: Hellephant
   m_TagString: Enemy
@@ -351,6 +352,7 @@ MonoBehaviour:
   _destroyOnDeath: 0
   _sinkingSpeed: 10
   _sinkingDepth: -10
+  _drop: {fileID: 0}
 --- !u!114 &8082997884347236283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,3 +366,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyStats: {fileID: 11400000, guid: 9a666abac5a2fb9498456fba77a9f2f2, type: 2}
+--- !u!114 &7754935309519293398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678125930446324421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfcaeb94cdd2c4e947038e6659d368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drops:
+  - {fileID: 3782917748102516192, guid: e3673fb04d3f1aa42b094c109a0a4c64, type: 3}

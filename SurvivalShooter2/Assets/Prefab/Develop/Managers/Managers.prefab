@@ -263,7 +263,7 @@ MonoBehaviour:
     - {fileID: 4079071240181768858, guid: 47072b5035bacde4d8d3f85f771342a0, type: 3}
     - {fileID: 1678125930446324421, guid: 1da1c51e95dbede4e92093570a4e78bb, type: 3}
     waveDuration: 140
-  _timeBetweenWaves: 7
+  _timeBetweenWaves: 10
   _startingWave: 0
   _currentWave: 0
   _waveIndex: 0
@@ -313,6 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947597ec90abbfc4d8b3e3c63c49895f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startGameFadeWait: 7
+  _scenesChangeFadeWait: 2
 --- !u!1 &5045320673874523936
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,9 +324,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5045320673874523939}
+  - component: {fileID: 5278059207222969053}
   m_Layer: 0
   m_Name: Managers
-  m_TagString: Untagged
+  m_TagString: Managers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,3 +352,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5278059207222969053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045320673874523936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48033464181ecd04ba9b28cb2adaa8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dontDestroyTag: Managers

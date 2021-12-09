@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 82381867}
   - component: {fileID: 82381866}
   - component: {fileID: 82381864}
+  - component: {fileID: 1148795902556187935}
   m_Layer: 10
   m_Name: HellephantNightmare
   m_TagString: Enemy
@@ -321,6 +322,7 @@ MonoBehaviour:
   _destroyOnDeath: 0
   _sinkingSpeed: 10
   _sinkingDepth: -10
+  _drop: {fileID: 0}
 --- !u!114 &82381867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,3 +366,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _walkParameterName: Speed
   _deathTriggerName: Die
+--- !u!114 &1148795902556187935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678125930446324421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfcaeb94cdd2c4e947038e6659d368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drops:
+  - {fileID: 3782917748102516192, guid: e3673fb04d3f1aa42b094c109a0a4c64, type: 3}

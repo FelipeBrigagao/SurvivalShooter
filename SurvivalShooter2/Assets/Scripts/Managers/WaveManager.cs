@@ -22,18 +22,14 @@ public class WaveManager : SingletonBase<WaveManager>
     #endregion
 
     #region Unity Methods
-    protected override void Awake()
+    private void OnEnable()
     {
-        base.Awake();
-        _enemiesSpawned = new List<GameObject>();
+        PlayerManager.Instance.OnPlayerDeath += StopSpawning;
+    }
 
-        _spawnsPosition = new Vector3[_spawnsHolder.childCount];
-
-        for(int i = 0; i<_spawnsPosition.Length; i++)
-        {
-            _spawnsPosition[i] = _spawnsHolder.GetChild(i).transform.position;
-        }
-    
+    private void OnDestroy()
+    {
+        PlayerManager.Instance.OnPlayerDeath -= StopSpawning;
     }
 
     private void Update()
@@ -83,6 +79,15 @@ public class WaveManager : SingletonBase<WaveManager>
 
     public void InitiateWaves()
     {
+        _enemiesSpawned = new List<GameObject>();
+
+        _spawnsPosition = new Vector3[_spawnsHolder.childCount];
+
+        for (int i = 0; i < _spawnsPosition.Length; i++)
+        {
+            _spawnsPosition[i] = _spawnsHolder.GetChild(i).transform.position;
+        }
+
         _currentWave = _startingWave;
 
         StartCoroutine(StartWave());
@@ -154,6 +159,15 @@ public class WaveManager : SingletonBase<WaveManager>
     {
         _spawnsHolder = spawnsHolder;
     }
+
+    public void StopSpawning()
+    {
+        StopAllCoroutines();
+        _currentState = WavesStates.NONE;
+    }
+
+
+
     #endregion
 }
 

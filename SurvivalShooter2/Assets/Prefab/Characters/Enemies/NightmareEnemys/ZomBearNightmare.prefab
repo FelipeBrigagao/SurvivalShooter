@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6262492319787968769}
   - component: {fileID: 3574763812924771218}
   - component: {fileID: 7568703043797342608}
+  - component: {fileID: 6440044868364882645}
   m_Layer: 10
   m_Name: ZomBearNightmare
   m_TagString: Enemy
@@ -290,6 +291,7 @@ MonoBehaviour:
   _destroyOnDeath: 0
   _sinkingSpeed: 10
   _sinkingDepth: -10
+  _drop: {fileID: 0}
 --- !u!114 &6262492319787968769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,3 +335,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _walkParameterName: Speed
   _deathTriggerName: Die
+--- !u!114 &6440044868364882645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079071240181768858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfcaeb94cdd2c4e947038e6659d368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drops:
+  - {fileID: 3782917748102516192, guid: e3673fb04d3f1aa42b094c109a0a4c64, type: 3}

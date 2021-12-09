@@ -65,12 +65,13 @@ public class EnemyController : MonoBehaviour
         if (_player != null)
         {
             _agent.SetDestination(_player.transform.position);
+         
+            if (_agent.velocity.magnitude < 0.01)
+            {
+                transform.LookAt(_player.transform);
+            }
         }
  
-        if (_agent.velocity.magnitude < 0.01)
-        {
-            transform.LookAt(_player.transform);
-        }
 
     }
 

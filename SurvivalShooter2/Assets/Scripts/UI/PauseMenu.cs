@@ -38,23 +38,19 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pausedMenu.SetActive(false);
-        Time.timeScale = 1f;
         GameManager.Instance.ResumeGame();
-        UIManager.Instance.GameResumed();
     }
 
     void Paused()
     {
         pausedMenu.SetActive(true);
-        Time.timeScale = 0f;
         GameManager.Instance.PauseGame();
-        UIManager.Instance.GamePaused();
     }
 
     public void ReturnToMenu()
     {
-        Time.timeScale = 1f;
-        ScenesManager.Instance.LoadMenuScene();
+        GameManager.Instance.ResumeGame();
+        StartCoroutine(GameManager.Instance.ReturnToMainMenu());
     }
     #endregion
 
