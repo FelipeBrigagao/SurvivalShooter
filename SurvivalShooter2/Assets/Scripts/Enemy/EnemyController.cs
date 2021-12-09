@@ -51,7 +51,6 @@ public class EnemyController : MonoBehaviour
                 MoveToTarget();
                 CheckAttackPlayer();
             }
-
             AnimateEnemy();
         }
     }

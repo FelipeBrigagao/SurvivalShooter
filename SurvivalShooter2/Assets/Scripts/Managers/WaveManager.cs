@@ -100,7 +100,7 @@ public class WaveManager : SingletonBase<WaveManager>
 
     IEnumerator StartWave()
     {
-        UIManager.Instance.ChangeWaveUITXT($"Wave {_currentWave}");
+        UIManager.Instance.ChangeWaveUITXT($"Wave {_currentWave + 1}");
 
         if(_currentWave >= _waves.Length)
         {

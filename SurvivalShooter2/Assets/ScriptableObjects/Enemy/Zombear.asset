@@ -17,7 +17,7 @@ MonoBehaviour:
   enemyPoints: 20
   enemyDeathSound: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
   enemyDamage: 20
-  enemyAttackRadius: 1.5
+  enemyAttackRadius: 1
   enemyAttackRate: 2.3
   enemySpeed: 3
   stopDistance: 2

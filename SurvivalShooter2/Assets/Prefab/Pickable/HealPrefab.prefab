@@ -132,7 +132,7 @@ MonoBehaviour:
   _pickableSound: {fileID: 0}
   _animator: {fileID: 0}
   _pickedTrigger: Picked
-  _healAmount: 10
+  _healAmount: 15
 --- !u!135 &3782917748102516195
 SphereCollider:
   m_ObjectHideFlags: 0

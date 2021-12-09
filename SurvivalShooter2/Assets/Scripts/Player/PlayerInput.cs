@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     #region Variables
-    [SerializeField] private PlayerController _playerController;
-    [SerializeField] private GunControl _gunControl;
+    private PlayerController _playerController;
+    private GunControl _gunControl;
     #endregion
 
     #region UnityMethods
@@ -40,12 +40,12 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            _gunControl.Shoot();
+            _gunControl?.Shoot();
         }
 
         if (Input.GetButtonUp("Fire1"))
         {
-            _gunControl.StopShooting();
+            _gunControl?.StopShooting();
         }
     }
     
