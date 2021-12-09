@@ -23,7 +23,13 @@ MonoBehaviour:
   stopDistance: 2
   firstTimeToSpawn: 7
   timeToSpawn: 5
-  baseEnemyDamage: 0
-  baseEnemySpeed: 0
-  basetimeToSpawn: 0
+  baseEnemyDamage: 20
+  baseEnemySpeed: 3
+  basetimeToSpawn: 5
+  enemyDamageBoost: 1
+  enemySpeedBoost: 0.3
+  enemyTimeToSpawnBoost: 0.3
+  maxEnemyDamage: 25
+  maxEnemySpeed: 5
+  minTimeToSpawn: 3
   dropPickupPossibility: 30

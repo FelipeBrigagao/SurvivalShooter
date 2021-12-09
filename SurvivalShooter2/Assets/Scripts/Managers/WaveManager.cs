@@ -5,19 +5,24 @@ using UnityEngine;
 public class WaveManager : SingletonBase<WaveManager>
 {
     #region Variables
+    [Header("Waves controller values")]
     [SerializeField] private Wave[] _waves;
     [SerializeField] private float _timeBetweenWaves;
     [SerializeField] private int _startingWave;
     [SerializeField] private int _currentWave;
     [SerializeField] private int _waveIndex;
+    
+    [SerializeField] private WavesStates _currentState;
 
+    [Header("Enemy spawn reference")]
     [SerializeField] private Transform _spawnsHolder;
     private Vector3[] _spawnsPosition;
     private float _countdownSpawnWave;
 
     [SerializeField] private List<GameObject> _enemiesSpawned;
 
-    [SerializeField] private WavesStates _currentState;
+    [Header("Ambient reference")]
+    [SerializeField] private Light _ambientLight;
 
     #endregion
 
@@ -100,10 +105,12 @@ public class WaveManager : SingletonBase<WaveManager>
         if(_currentWave >= _waves.Length)
         {
             _waveIndex = _waves.Length - 1;
+            _waves[_waveIndex].ApplyWaveEffects(true);
         }
         else
         {
             _waveIndex = _currentWave;
+            _waves[_waveIndex].ApplyWaveEffects(false);
         }
 
         _countdownSpawnWave = _waves[_waveIndex].waveDuration;
@@ -166,6 +173,16 @@ public class WaveManager : SingletonBase<WaveManager>
         _currentState = WavesStates.NONE;
     }
 
+
+    public void SetAmbientLight(Light ambientLight)
+    {
+        _ambientLight = ambientLight;
+    }
+
+    public void ChangeAmbientLight(Color ambientColor)
+    {
+        _ambientLight.color = ambientColor;
+    }
 
 
     #endregion

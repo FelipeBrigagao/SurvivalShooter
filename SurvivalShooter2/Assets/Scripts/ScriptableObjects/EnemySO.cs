@@ -23,12 +23,41 @@ public class EnemySO : ScriptableObject
     public float baseEnemySpeed;
     public float basetimeToSpawn;
 
+    public int enemyDamageBoost;
+    public float enemySpeedBoost;
+    public float enemyTimeToSpawnBoost;
+
+    public int maxEnemyDamage;
+    public float maxEnemySpeed;
+    public float minTimeToSpawn;
+
     public float dropPickupPossibility;
 
-    public void IncreaseDifficulty(int damageBoost, float speedBoost)
+    public void IncreaseDifficulty()
     {
-        enemyDamage = baseEnemyDamage + damageBoost;
-        enemySpeed = baseEnemySpeed + speedBoost;
+        Debug.Log($"{name} increasing difficulty");
+
+        enemyDamage = baseEnemyDamage + enemyDamageBoost;
+        enemySpeed = baseEnemySpeed + enemySpeedBoost;
+        timeToSpawn = basetimeToSpawn - enemyTimeToSpawnBoost;
+
+        if (enemyDamage > maxEnemyDamage)
+            enemyDamage = maxEnemyDamage;
+        
+        if (enemySpeed > maxEnemySpeed)
+            enemySpeed = maxEnemySpeed;
+
+        if (timeToSpawn < minTimeToSpawn)
+            timeToSpawn = minTimeToSpawn;
+        
+    }
+
+    public void ResetStats()
+    {
+        Debug.Log($"{name} reseting difficulty");
+        enemyDamage = baseEnemyDamage;
+        enemySpeed = baseEnemySpeed;
+        timeToSpawn = basetimeToSpawn;
     }
 
 }

@@ -26,4 +26,10 @@ MonoBehaviour:
   baseEnemyDamage: 30
   baseEnemySpeed: 2.5
   basetimeToSpawn: 7
+  enemyDamageBoost: 1
+  enemySpeedBoost: 0.2
+  enemyTimeToSpawnBoost: 0.2
+  maxEnemyDamage: 35
+  maxEnemySpeed: 3.5
+  minTimeToSpawn: 5.5
   dropPickupPossibility: 50

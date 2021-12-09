@@ -228,17 +228,20 @@ MonoBehaviour:
     enemiesToSpawn:
     - {fileID: 8419862694359575954, guid: 239d53d3b3ff7fa4d8d5376c30f27c65, type: 3}
     waveDuration: 40
+    waveLightColor: {r: 1, g: 1, b: 1, a: 1}
   - waveName: Wave 2
     enemiesToSpawn:
     - {fileID: 8419862694359575954, guid: 239d53d3b3ff7fa4d8d5376c30f27c65, type: 3}
     - {fileID: 4079071240181768858, guid: e4e9ec85c1a24d141ae1cd44277703fa, type: 3}
     waveDuration: 60
+    waveLightColor: {r: 1, g: 1, b: 1, a: 1}
   - waveName: Wave 3
     enemiesToSpawn:
     - {fileID: 8419862694359575954, guid: 239d53d3b3ff7fa4d8d5376c30f27c65, type: 3}
     - {fileID: 4079071240181768858, guid: e4e9ec85c1a24d141ae1cd44277703fa, type: 3}
     - {fileID: 1678125930446324421, guid: 17b266e8fca20fe439844a709d52f02d, type: 3}
     waveDuration: 80
+    waveLightColor: {r: 1, g: 1, b: 1, a: 1}
   - waveName: Wave 4
     enemiesToSpawn:
     - {fileID: 8419862694359575954, guid: 239d53d3b3ff7fa4d8d5376c30f27c65, type: 3}
@@ -246,6 +249,7 @@ MonoBehaviour:
     - {fileID: 1678125930446324421, guid: 17b266e8fca20fe439844a709d52f02d, type: 3}
     - {fileID: 8419862694359575954, guid: ed692fb9daf7cf94cb4e07690ad67c80, type: 3}
     waveDuration: 100
+    waveLightColor: {r: 1, g: 0, b: 0, a: 1}
   - waveName: Wave 5
     enemiesToSpawn:
     - {fileID: 8419862694359575954, guid: 239d53d3b3ff7fa4d8d5376c30f27c65, type: 3}
@@ -254,6 +258,7 @@ MonoBehaviour:
     - {fileID: 8419862694359575954, guid: ed692fb9daf7cf94cb4e07690ad67c80, type: 3}
     - {fileID: 4079071240181768858, guid: 47072b5035bacde4d8d3f85f771342a0, type: 3}
     waveDuration: 120
+    waveLightColor: {r: 1, g: 0, b: 0, a: 1}
   - waveName: Wave 6
     enemiesToSpawn:
     - {fileID: 8419862694359575954, guid: 239d53d3b3ff7fa4d8d5376c30f27c65, type: 3}
@@ -263,13 +268,15 @@ MonoBehaviour:
     - {fileID: 4079071240181768858, guid: 47072b5035bacde4d8d3f85f771342a0, type: 3}
     - {fileID: 1678125930446324421, guid: 1da1c51e95dbede4e92093570a4e78bb, type: 3}
     waveDuration: 140
+    waveLightColor: {r: 1, g: 0, b: 0, a: 1}
   _timeBetweenWaves: 10
   _startingWave: 0
   _currentWave: 0
   _waveIndex: 0
+  _currentState: 1
   _spawnsHolder: {fileID: 0}
   _enemiesSpawned: []
-  _currentState: 1
+  _ambientLight: {fileID: 0}
 --- !u!1 &5045320673607339926
 GameObject:
   m_ObjectHideFlags: 0

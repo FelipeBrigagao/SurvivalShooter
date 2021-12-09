@@ -12,9 +12,32 @@ public class Wave
 
     public Color waveLightColor;
 
-    public void ApplyWaveEffects()
+    public void ApplyWaveEffects(bool apllyEnemyEffects)
     {
+        Debug.Log("Applying wave effects");
+        WaveManager.Instance.ChangeAmbientLight(waveLightColor);
 
+        EnemySetup enemySetup;
+
+        foreach (var enemy in enemiesToSpawn)
+        {
+            enemySetup = enemy.GetComponent<EnemySetup>();
+            
+            if (apllyEnemyEffects)
+            {
+                enemySetup._enemyStats.IncreaseDifficulty();
+                Debug.Log("Increasing difficulty");
+            }
+            else
+            {
+                enemySetup._enemyStats.ResetStats();
+                Debug.Log("Reseting difficulty");
+            }
+        }
+
+
+
+       
     }
 }
  
