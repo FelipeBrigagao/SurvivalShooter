@@ -47,6 +47,19 @@ public class HealthBase : MonoBehaviour
 
     }
 
+    public virtual void Heal(int healingTaken)
+    {
+        if(_currentHealth < _maxHealth)
+        {
+            _currentHealth += healingTaken;
+
+            if(_currentHealth > _maxHealth)
+            {
+                _currentHealth = _maxHealth;
+            }
+        }
+    }
+
     protected virtual void Die()
     {
         _isDead = true;

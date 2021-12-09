@@ -23,6 +23,8 @@ public class EnemySO : ScriptableObject
     public float baseEnemySpeed;
     public float basetimeToSpawn;
 
+    public float dropPickupPossibility;
+
     public void IncreaseDifficulty(int damageBoost, float speedBoost)
     {
         enemyDamage = baseEnemyDamage + damageBoost;

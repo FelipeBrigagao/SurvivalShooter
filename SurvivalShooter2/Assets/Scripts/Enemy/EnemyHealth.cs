@@ -13,6 +13,8 @@ public class EnemyHealth : HealthBase
     
     [SerializeField] private float _sinkingSpeed = 5f;
     [SerializeField] private float _sinkingDepth = -10f;
+
+    [SerializeField] private DropEffectPickUp _drop;
     #endregion
 
     #region Events
@@ -35,6 +37,7 @@ public class EnemyHealth : HealthBase
 
         _enemySound = GetComponent<AudioSource>();
         _enemyAnim = GetComponent<EnemyAnimation>();
+        _drop = GetComponent<DropEffectPickUp>();
     }
 
     #endregion
@@ -63,6 +66,7 @@ public class EnemyHealth : HealthBase
 
         PlayerManager.Instance.AddPoints(_enemySetup._enemyStats.enemyPoints);
         WaveManager.Instance.RemoveSpawnedEnemy(this.gameObject);
+        _drop.DropPickUp(_enemySetup._enemyStats.dropPickupPossibility);
 
         _enemyAnim.EnemyDeathAnimation();
 

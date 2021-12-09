@@ -44,6 +44,9 @@ public class PlayerHealth : HealthBase
         playerAudio.Play();
     }
 
+
+
+
     protected override void Die()
     {
         base.Die();
@@ -52,6 +55,12 @@ public class PlayerHealth : HealthBase
         playerAudio.clip = deathAudio;
         playerAudio.Play();
         PlayerManager.Instance.PlayerDied();
+    }
+
+    public override void Heal(int healingTaken)
+    {
+        base.Heal(healingTaken);
+        UIManager.Instance.UpdateHealthUI(_currentHealth);
     }
 
     private void FlashScreen()
