@@ -34,7 +34,8 @@ public class GameManager : SingletonBase<GameManager>
     public IEnumerator StartGame()
     {
         UIManager.Instance.StartGameFade();
-        yield return new WaitForSeconds(7f);
+        AudioManager.Instance.FadeOutMusic();
+        yield return new WaitForSeconds(_startGameFadeWait);
         ScenesManager.Instance.LoadGameScene();
     }
 
@@ -42,7 +43,8 @@ public class GameManager : SingletonBase<GameManager>
     {
         UIManager.Instance.ChangeScenesFade();
         StopRound();
-        yield return new WaitForSeconds(2f);
+        AudioManager.Instance.FadeOutMusic();
+        yield return new WaitForSeconds(_scenesChangeFadeWait);
         ScenesManager.Instance.LoadGameScene();
     }
 
@@ -50,12 +52,14 @@ public class GameManager : SingletonBase<GameManager>
     {
         UIManager.Instance.ChangeScenesFade();
         StopRound();
-        yield return new WaitForSeconds(2f);
+        AudioManager.Instance.FadeOutMusic();
+        yield return new WaitForSeconds(_scenesChangeFadeWait);
         ScenesManager.Instance.LoadMenuScene();
     }
 
     public void StartRound()
     {
+        AudioManager.Instance.EnterGameMusic();
         PlayerManager.Instance.InstantiatePlayer();
         PlayerManager.Instance.InitiatePoints();
         UIManager.Instance.InitiateGameUI();

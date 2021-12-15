@@ -8,8 +8,6 @@ using TMPro;
 public class Settings : MonoBehaviour
 {
     #region Variables
-    public AudioMixer audioMixer;
-
     Resolution[] resolutions;
 
     public TMP_Dropdown resolutionDD;
@@ -60,9 +58,9 @@ public class Settings : MonoBehaviour
 
         fullscreenToggle.isOn = Screen.fullScreen;
     }
-    public void SetVolume(float volume)
+    public void SetMainVolume(float volume)
     {
-        audioMixer.SetFloat("GeneralVol", volume);
+        AudioManager.Instance.SetMainVolume(volume );
     }
 
     public void SetQuality(int qualityIndex)

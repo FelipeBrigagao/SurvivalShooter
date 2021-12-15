@@ -8,8 +8,6 @@ public class MainMenu : MonoBehaviour
 {
     #region Variables
     public Animator transitionAnim;
-
-    float waitForAnimationTime = 7f;
     #endregion
 
     #region Unity Methods
@@ -20,6 +18,7 @@ public class MainMenu : MonoBehaviour
     {
         StartCoroutine(GameManager.Instance.StartGame());
     }
+
 
     public void ExitGame()
     {

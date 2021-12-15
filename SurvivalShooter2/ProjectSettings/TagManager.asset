@@ -15,6 +15,7 @@ TagManager:
   - NightmareBunny
   - Managers
   - Pickable
+  - Environment
   layers:
   - Default
   - TransparentFX
