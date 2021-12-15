@@ -1314,6 +1314,11 @@ PrefabInstance:
       propertyPath: _effectDuration
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2297757987049211182, guid: af6e19515bdedfd4a9f79a32de960086,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2297757987562837158, guid: af6e19515bdedfd4a9f79a32de960086,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1444,6 +1449,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3216360064448239761, guid: af6e19515bdedfd4a9f79a32de960086,
+        type: 3}
+      propertyPath: _fadeAnim
+      value: 
+      objectReference: {fileID: 2297757986742675376}
     - target: {fileID: 4586193272977468023, guid: af6e19515bdedfd4a9f79a32de960086,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1471,6 +1481,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6e19515bdedfd4a9f79a32de960086, type: 3}
+--- !u!95 &2297757986742675376 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2454121187475918284, guid: af6e19515bdedfd4a9f79a32de960086,
+    type: 3}
+  m_PrefabInstance: {fileID: 2297757986742675375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5045320673498800853
 PrefabInstance:
   m_ObjectHideFlags: 0
