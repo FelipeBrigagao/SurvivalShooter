@@ -29,6 +29,9 @@ public class ScenesManager : SingletonBase<ScenesManager>
         SceneManager.LoadScene(_gameSceneIndex);
     }
 
-
+    public void ChangeGameScene(int sceneIndex)
+    {
+        _gameSceneIndex = sceneIndex;
+    }
     #endregion
 }

@@ -25,5 +25,11 @@ public class SpawnManager : SingletonBase<SpawnManager>
         return player;
     }
 
+    public GameObject SpawnEnemy(GameObject enemyPrefab, Vector3 spawnPosition)
+    {
+        GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        return enemy;
+    }
+
     #endregion
 }

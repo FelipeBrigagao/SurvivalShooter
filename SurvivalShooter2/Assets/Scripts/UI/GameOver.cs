@@ -21,12 +21,12 @@ public class GameOver : MonoBehaviour
     #region Methods
     public void RestartGame()
     {
-        ScenesManager.Instance.LoadGameScene();
+        StartCoroutine(GameManager.Instance.RetryGame());
     }
 
     public void ExitGame()
     {
-        ScenesManager.Instance.LoadMenuScene();
+        StartCoroutine(GameManager.Instance.ReturnToMainMenu());
     }
 
 

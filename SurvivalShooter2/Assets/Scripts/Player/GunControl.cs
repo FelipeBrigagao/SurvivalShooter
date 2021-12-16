@@ -19,6 +19,8 @@ public class GunControl : MonoBehaviour
     private float nextTimeToShoot = 0;
     private Ray shotRay;
 
+    [SerializeField] private LayerMask _hitableLayers; 
+
     public bool isShooting { get; private set; }
 
     private float shotLineFlashTime = .2f;
@@ -52,9 +54,8 @@ public class GunControl : MonoBehaviour
             StartCoroutine(ShotLineInstantiate());
             shootLine.SetPosition(0, firePoint.position);
 
-            if (Physics.Raycast(shotRay, out RaycastHit hitInfo, shotRange))
+            if (Physics.Raycast(shotRay, out RaycastHit hitInfo, shotRange, _hitableLayers))
             {
-
                 shootLine.SetPosition(1, hitInfo.point);
 
                 if (hitInfo.transform.gameObject.CompareTag("Enemy"))

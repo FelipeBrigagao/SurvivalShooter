@@ -27,16 +27,8 @@ public class PlayerHealth : HealthBase
         _playerAnim = GetComponent<PlayerAnimation>();
         playerAudio = GetComponent<AudioSource>();
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            HurtReaction();
-        }
-    }
-
     #endregion
+
 
     #region Methods
     public override void TakeDamage(int damageTaken)
@@ -52,6 +44,9 @@ public class PlayerHealth : HealthBase
         playerAudio.Play();
     }
 
+
+
+
     protected override void Die()
     {
         base.Die();
@@ -60,6 +55,12 @@ public class PlayerHealth : HealthBase
         playerAudio.clip = deathAudio;
         playerAudio.Play();
         PlayerManager.Instance.PlayerDied();
+    }
+
+    public override void Heal(int healingTaken)
+    {
+        base.Heal(healingTaken);
+        UIManager.Instance.UpdateHealthUI(_currentHealth);
     }
 
     private void FlashScreen()

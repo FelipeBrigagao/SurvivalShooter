@@ -13,6 +13,8 @@ public class UIManager : SingletonBase<UIManager>
     [SerializeField] private GameObject _playerHealthUI;
 
     private HealthSlider _playerHealthSlider;
+    private WaveUI _waveUI;
+    private Fade _fade;
 
     #endregion
 
@@ -24,7 +26,10 @@ public class UIManager : SingletonBase<UIManager>
 
     }
 
-
+    private void OnDestroy()
+    {
+        PlayerManager.Instance.OnPlayerDeath -= PlayerDied;
+    }
     #endregion
 
     #region Methods
@@ -38,6 +43,17 @@ public class UIManager : SingletonBase<UIManager>
     {
         UpdateScoreUI();
     }
+
+    private void DisableScoreTXT()
+    {
+        _scoreTXT.enabled = false;
+    }
+
+    private void EnableScoreTXT()
+    {
+        _scoreTXT.enabled = true;
+    }
+
 
     public void SetMaxtHealthUI()
     {
@@ -55,32 +71,24 @@ public class UIManager : SingletonBase<UIManager>
     {
         _playerHealthSlider.UpdateCurrentHealthUI(health);
     }
-
-    private void EnableGameOverScreen()
+    private void EnablePlayerHealthIMG()
     {
-        _gameOverScreen.SetActive(true);
+        _playerHealthUI.SetActive(true);
     }
-
     private void DisablePlayerHealthIMG()
     {
         _playerHealthUI.SetActive(false);
     }
 
-    private void DisableScoreTXT()
+    public void ChangeWaveUITXT(string waveUITXT)
     {
-        _scoreTXT.enabled = false;
+        _waveUI.ChangeWave(waveUITXT);
     }
 
-    private void EnablePlayerHealthIMG()
+    private void EnableGameOverScreen()
     {
-        _playerHealthUI.SetActive(true);
+        _gameOverScreen.SetActive(true);
     }
-
-    private void EnableScoreTXT()
-    {
-        _scoreTXT.enabled = true;
-    }
-
 
     public void GamePaused()
     {
@@ -110,27 +118,39 @@ public class UIManager : SingletonBase<UIManager>
         InitiateHealthUI();
     }
 
+    public void StartGameFade()
+    {
+        _fade.EnterGameFade();
+    }
 
+    public void ChangeScenesFade()
+    {
+        _fade.ChangeScenesFade();
+    }
 
-    public void GO_SetScoreTXT(Text scoreTXT)
+    public void SetScoreTXT(Text scoreTXT)
     {
         _scoreTXT = scoreTXT;
     }
 
-    public void GO_SetHealthUI(GameObject healthUI)
+    public void SetHealthUI(GameObject healthUI)
     {
         _playerHealthUI = healthUI;
     }
 
-    public void GO_SetGameOverScreen(GameObject gameOverScreen)
+    public void SetGameOverScreenUI(GameObject gameOverScreen)
     {
         _gameOverScreen = gameOverScreen;
     }
 
-    private void OnDestroy()
+    public void SetWaveUI(WaveUI waveUI)
     {
-        PlayerManager.Instance.OnPlayerDeath -= PlayerDied;
+        _waveUI = waveUI;
     }
 
+    public void SetFade(Fade fade)
+    {
+        _fade = fade;
+    }
     #endregion
 }

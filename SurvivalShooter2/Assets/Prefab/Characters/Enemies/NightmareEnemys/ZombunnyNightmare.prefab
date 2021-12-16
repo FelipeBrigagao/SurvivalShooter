@@ -98,6 +98,9 @@ GameObject:
   - component: {fileID: 1326635075}
   - component: {fileID: 666254722}
   - component: {fileID: 1993391509}
+  - component: {fileID: 2232647279409096926}
+  - component: {fileID: 7850744574714658993}
+  - component: {fileID: 6552162137836157929}
   m_Layer: 10
   m_Name: ZombunnyNightmare
   m_TagString: Enemy
@@ -184,7 +187,8 @@ AudioSource:
   m_GameObject: {fileID: 8419862694359575954}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8434b04884c414ac6b468e10945685e6,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 02e6208ec76314158a9f548f51fe9f11, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -283,6 +287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d502f4b2744473e4296b06577b6252c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyHealth: {fileID: 1993391509}
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &1993391509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,4 +303,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9ffb67bff9e704f8c3dc67c12f6fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
+  _maxHealth: 0
+  _destroyOnDeath: 0
+  _sinkingSpeed: 10
+  _sinkingDepth: -10
+  _drop: {fileID: 0}
+--- !u!114 &2232647279409096926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419862694359575954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d945403e91226a46b3f341ecf4b0b85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyStats: {fileID: 11400000, guid: 88fb26445b0e19849b50c90b36a5657c, type: 2}
+--- !u!114 &7850744574714658993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419862694359575954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1ecc4f1ae3e9846906cdfcebb2cfd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walkParameterName: Speed
+  _deathTriggerName: Die
+--- !u!114 &6552162137836157929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419862694359575954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eccfcaeb94cdd2c4e947038e6659d368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drops:
+  - {fileID: 3782917748102516192, guid: e3673fb04d3f1aa42b094c109a0a4c64, type: 3}
