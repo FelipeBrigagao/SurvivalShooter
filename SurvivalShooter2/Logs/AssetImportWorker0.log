@@ -528,3 +528,215 @@ System memory in use after: 48.5 MB.
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1984.
 Total: 1.736900 ms (FindLiveObjects: 0.195300 ms CreateObjectMapping: 0.057300 ms MarkObjects: 1.468500 ms  DeleteObjects: 0.014100 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001453 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.772 seconds
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1445 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1987.
+Total: 1.662200 ms (FindLiveObjects: 0.182800 ms CreateObjectMapping: 0.050900 ms MarkObjects: 1.413200 ms  DeleteObjects: 0.013600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 461.792226 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombear.asset
+  artifactKey: Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombear.asset using Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddee2da3c882e99b70ff85a2e84bb8d') in 0.019435 seconds
+  Import took 0.022224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.413095 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombunny.asset
+  artifactKey: Guid(e4422a550dd202242a496af281784425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombunny.asset using Guid(e4422a550dd202242a496af281784425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d36272cb335fe38d1fb4c6a346915bb') in 0.002218 seconds
+  Import took 0.004550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.826541 seconds.
+  path: Assets/ScriptableObjects/Enemy/ZombunnyNightmare.asset
+  artifactKey: Guid(88fb26445b0e19849b50c90b36a5657c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/ZombunnyNightmare.asset using Guid(88fb26445b0e19849b50c90b36a5657c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750c23820e89cbaa290a54cefa196bef') in 0.002197 seconds
+  Import took 0.004481 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001549 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.648 seconds
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1445 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1990.
+Total: 1.652000 ms (FindLiveObjects: 0.179700 ms CreateObjectMapping: 0.054900 ms MarkObjects: 1.400800 ms  DeleteObjects: 0.015600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.364269 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombear.asset
+  artifactKey: Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombear.asset using Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571a30a1f5a6906998c4d8566cade7e8') in 0.011854 seconds
+  Import took 0.014223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.458781 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombunny.asset
+  artifactKey: Guid(e4422a550dd202242a496af281784425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombunny.asset using Guid(e4422a550dd202242a496af281784425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c2e09a17858e59a51a797b0aabed53') in 0.002512 seconds
+  Import took 0.004971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004967 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombunny.asset
+  artifactKey: Guid(e4422a550dd202242a496af281784425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombunny.asset using Guid(e4422a550dd202242a496af281784425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c2e09a17858e59a51a797b0aabed53') in 0.002333 seconds
+  Import took 0.004796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.807180 seconds.
+  path: Assets/ScriptableObjects/Enemy/ZombunnyNightmare.asset
+  artifactKey: Guid(88fb26445b0e19849b50c90b36a5657c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/ZombunnyNightmare.asset using Guid(88fb26445b0e19849b50c90b36a5657c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb857b3ca83da3b90093c71b763dc27c') in 0.002130 seconds
+  Import took 0.004438 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001486 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1445 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1993.
+Total: 1.764900 ms (FindLiveObjects: 0.176800 ms CreateObjectMapping: 0.051500 ms MarkObjects: 1.505900 ms  DeleteObjects: 0.029500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.436036 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombear.asset
+  artifactKey: Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombear.asset using Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bab141355ef3ed580bc15831834a31d') in 0.016294 seconds
+  Import took 0.018673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005631 seconds.
+  path: Assets/ScriptableObjects/Enemy/Zombear.asset
+  artifactKey: Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Enemy/Zombear.asset using Guid(1281dc456dcf7fe4cbae01299de8df54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bab141355ef3ed580bc15831834a31d') in 0.002365 seconds
+  Import took 0.004660 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001415 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.668 seconds
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1445 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1996.
+Total: 1.711500 ms (FindLiveObjects: 0.163900 ms CreateObjectMapping: 0.052400 ms MarkObjects: 1.478100 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.799 seconds
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1445 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.1 MB.
+System memory in use after: 77.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1999.
+Total: 1.839500 ms (FindLiveObjects: 0.205700 ms CreateObjectMapping: 0.066400 ms MarkObjects: 1.547500 ms  DeleteObjects: 0.018600 ms)
+

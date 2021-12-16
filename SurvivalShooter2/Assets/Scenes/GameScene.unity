@@ -1426,8 +1426,34 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2670254565666302338, guid: af6e19515bdedfd4a9f79a32de960086,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670254565666302338, guid: af6e19515bdedfd4a9f79a32de960086,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2297757986742675376}
+    - target: {fileID: 2670254565666302338, guid: af6e19515bdedfd4a9f79a32de960086,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670254565666302338, guid: af6e19515bdedfd4a9f79a32de960086,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6e19515bdedfd4a9f79a32de960086, type: 3}
+--- !u!1 &2297757986742675376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2297757987049211182, guid: af6e19515bdedfd4a9f79a32de960086,
+    type: 3}
+  m_PrefabInstance: {fileID: 2297757986742675375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5045320673498800853
 PrefabInstance:
   m_ObjectHideFlags: 0
