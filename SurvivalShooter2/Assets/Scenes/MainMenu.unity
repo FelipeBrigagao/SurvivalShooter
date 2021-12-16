@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 396335510}
-  m_IndirectSpecularColor: {r: 0.012788114, g: 0.017876048, b: 0.02656062, a: 0.1}
+  m_IndirectSpecularColor: {r: 0.0129193785, g: 0.017323023, b: 0.022912776, a: 0.1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2992,6 +2992,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ZombearStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184551829222939184, guid: 23be532545c833e438a051ad17a4a66e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 446180f23a971a14fa83222661bd1212, type: 2}
+    - target: {fileID: 7498202575358272784, guid: 23be532545c833e438a051ad17a4a66e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498202575358272784, guid: 23be532545c833e438a051ad17a4a66e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 7768698813928544115, guid: 23be532545c833e438a051ad17a4a66e,
         type: 3}
