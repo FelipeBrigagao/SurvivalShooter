@@ -364,3 +364,12 @@ Received Import Request.
 Start importing Assets/DownloadedAssets/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact Debris.mat using Guid(dcc19ce42d48d6648a4d66911790b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add45b9e36836932847e44e32fa56861') in 0.011004 seconds
   Import took 0.013695 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2204.908612 seconds.
+  path: Assets/Prefab
+  artifactKey: Guid(12f12e72489dbbd4d92792c82bfde29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab using Guid(12f12e72489dbbd4d92792c82bfde29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ee0bcf40b7163a89c397bb45267da7') in 0.005591 seconds
+  Import took 0.008436 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
