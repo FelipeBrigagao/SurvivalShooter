@@ -31,27 +31,23 @@ public class AudioManager : SingletonBase<AudioManager>
     #region Methods
     public void FadeInMusic()
     {
-        Debug.Log("FadeIn");
         _musicAnim.SetTrigger(_fadeInParameter);
     }
 
     public void FadeOutMusic()
     {
-        Debug.Log("FadeOut");
         _musicAnim.SetTrigger(_fadeOutParameter);
     }
 
     public void EnterMenuMusic()
     {
-        Debug.Log("EnterMenuMusic");
         _audio.clip = _mainMenuAudio;
         _audio.Play();
         FadeInMusic();
     }
 
     public void EnterGameMusic()
-    {
-        Debug.Log("EnterGameMusic");
+    { 
         _audio.clip = _inGameAudio;
         _audio.Play();
         FadeInMusic();
@@ -71,6 +67,14 @@ public class AudioManager : SingletonBase<AudioManager>
     {
         _audioMixer.SetFloat(_soundEffectsMixerParameter, volume);
     }
+  
+    public float GetMasterMixerVolume()
+    {
+        _audioMixer.GetFloat(_masterMixerParameter, out float volume);
+        Debug.Log("volume " + volume);
+        return volume;
+    }
+    
     #endregion
 
 }

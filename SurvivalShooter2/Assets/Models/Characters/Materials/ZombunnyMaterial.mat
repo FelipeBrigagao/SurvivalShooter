@@ -83,9 +83,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 2.1185474, b: 1.8856181, a: 1}
+    - _EmissionColor: {r: 0, g: 2.6082377, b: 2.335124, a: 1}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColorWithMapUI: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 0.19007264, g: 0.18425605, b: 0.35294116, a: 0}
     - _SpecColor: {r: 0.283737, g: 0.2845931, b: 0.30147058, a: 1}
     - _SpecularColor: {r: 0.22794116, g: 0.22794116, b: 0.22794116, a: 1}
+  m_BuildTextureStacks: []

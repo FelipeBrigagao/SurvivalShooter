@@ -609,16 +609,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 168664404}
     m_Modifications:
-    - target: {fileID: 7170720285806862479, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7170720285806862479, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7170720287199329640, guid: fb103004e1e5ef141a663d8b067a5330,
         type: 3}
       propertyPath: m_Pivot.x
@@ -724,20 +714,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7170720287199329641, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7170720287199329643, guid: fb103004e1e5ef141a663d8b067a5330,
         type: 3}
       propertyPath: m_Name
       value: SettingsMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7170720287199329643, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8730311446545236535, guid: fb103004e1e5ef141a663d8b067a5330,
         type: 3}
@@ -749,26 +729,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 168664405}
-    - target: {fileID: 8730311446545236535, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 8730311446545236535, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: TurnMainMenuCameraOn
-      objectReference: {fileID: 0}
-    - target: {fileID: 8730311446545236535, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8730311446545236535, guid: fb103004e1e5ef141a663d8b067a5330,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: MainScreenCameras, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb103004e1e5ef141a663d8b067a5330, type: 3}
 --- !u!224 &228188684 stripped
@@ -2384,9 +2344,9 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 238998382}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -3391,7 +3351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 595.959, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1537285965

@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     #region Variables
-    public GameObject pausedMenu;
+    [SerializeField] private GameObject pausedMenu;
+    [SerializeField] private Transform pauseElements;
     #endregion
 
     #region Unity Methods
@@ -37,7 +38,11 @@ public class PauseMenu : MonoBehaviour
     #region Methods
     public void ResumeGame()
     {
-        pausedMenu.SetActive(false);
+        for(int i = 0; i < pauseElements.childCount; i++)
+        {
+            pauseElements.GetChild(i).gameObject.SetActive(false);
+        }
+
         GameManager.Instance.ResumeGame();
     }
 
