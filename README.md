@@ -11,11 +11,17 @@ O projeto foi realizado com base em um tutorial antigo disponibilizado pela Unit
 - Pontos de aprendizado:
 
 Elaboração de todo um sistema integrado com managers para a melhor execução do jogo, e com elementos de jogo facilmente alteravéis para facilitar alterações de gameplay.
+
 Modularização de vários elementos e utilização de scriptable objects para facilitar a implementação e construção de novos inimigos.
+
 Elaboração de um sistema de UI mais agradavel ao usuário, com animações entre menus, música de fundo e fades entre cenas.
+
 Toda construção de um sistema de waves, onde cada wave sempre terá sua própria peculiaridade, e pode ser facilmente alterada por meio manager.
+
 Utilização de postprocessing e lightmaps para elaboração de uma ambientação mais adequada ao tipo de jogo.
+
 Utilização do navmesh para implementação do sistema de IA dos inimigos.
+
 Criação de um modelo de exportação do jogo que pode ser instalado facilmente em outro pc.
 
 - Como instalar:
