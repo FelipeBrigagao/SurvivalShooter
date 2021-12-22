@@ -14,6 +14,8 @@ public class Settings : MonoBehaviour
 
     public TMP_Dropdown qualityDD;
 
+    public Slider volumeSlider;
+
     public Toggle fullscreenToggle;
     #endregion
 
@@ -41,7 +43,8 @@ public class Settings : MonoBehaviour
             string aux = resolutions[i].width + "x" + resolutions[i].height;
             res.Add(aux);
 
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.currentResolution.width &&
+                resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
             }
@@ -55,6 +58,7 @@ public class Settings : MonoBehaviour
 
 
         qualityDD.value = QualitySettings.GetQualityLevel();
+        volumeSlider.value = AudioManager.Instance.GetMasterMixerVolume();
 
         fullscreenToggle.isOn = Screen.fullScreen;
     }

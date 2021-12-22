@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cam: {fileID: 8326854074562431617}
+  _camOffset: {x: 0, y: 6.3, z: -10}
 --- !u!114 &894953324
 MonoBehaviour:
   m_ObjectHideFlags: 0
